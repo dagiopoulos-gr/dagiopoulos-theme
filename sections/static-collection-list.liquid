@@ -1,0 +1,21 @@
+{% include 'breadcrumb-menu' %}
+
+<div class="listcollections--container">
+    <div class="listcollections--inner">
+        {% unless collection.handle == 'google-feed' and collection.handle == 'bestprice-feed' and collection.handle == 'skroutz-feed'  %}
+            {% capture cat %}{{ collection.handle }}{% endcapture %}
+        {% endunless %}
+        {{cat}}
+        {% for link in linklists[cat].links %}
+            {% assign collection = link.object %}
+            {% include 'collection-list-item' %}
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Collection List",
+        "settings": []
+    }
+{% endschema %}
