@@ -1,8 +1,30 @@
-{% assign linklist = linklists["brands"] %}
-{% assign collections_per_row = settings.frontpage_collections_per_row %}
+{% assign linklist = 'brands' %}
 
-<div class="twelve columns collection-list">
-  <h1 class="page-title">{{page.title | escape}}</h1>
-    {{ page.content }}
-    {% include 'collection-within-collection' %}
+{% include 'breadcrumbs' %}
+
+<div class="listcollections--container">
+  <h1 class="page-title">
+    {{ page.title }}
+  </h1>
+
+  {% if page.content != blank %}
+    <div class="page-content rte">
+      {{ page.content }}
+    </div>
+  {% endif %}
+  <div class="listcollections--inner">
+    {% for link in linklists[linklist].links %}
+      {% assign link_handle = link.handle %}
+      {% assign collection = collections[link_handle] %}
+      {% include 'collection-list-item' %}
+    {% endfor %}
+  </div>
 </div>
+
+{% comment %} 
+  <ul>
+    {% for product_vendor in shop.vendors %}
+      <li>{{ product_vendor | link_to_vendor }}</li>
+    {% endfor %} 
+  </ul>
+{% endcomment %}
