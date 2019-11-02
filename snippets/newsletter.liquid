@@ -1,0 +1,67 @@
+{% assign newsletter_tags = 'prospect' %}
+
+{%- if template contains 'password' %}
+  {% assign newsletter_tags = newsletter_tags | append: ' password page' %}
+{%- else -%}
+  {% assign newsletter_tags = newsletter_tags | append: ' newsletter' %}
+{%- endif -%}
+
+<!-- <iframe name="dummyframe" id="dummyframe" width="0" height="0" border="0" style="display: none;"></iframe> -->
+<div class="newsletter">
+	<form action="https://app.moosend.com/subscribe/8d446582-674a-4d19-ae2a-e1e94777df43" method="post" id="ms-sub-form" target="dummyframe">
+        
+      <input
+        type="hidden"
+        name="contact[tags]"
+        value="{{ newsletter_tags }}">
+
+      <div class="form-fields-inline">
+
+        <div class="form-field newsletter-input">
+          <input
+            class="form-field-input form-field-text"
+            name="ms-email"
+            id="email"
+            type="email"
+            placeholder="{{ 'general.newsletter.placeholder' | t }}"
+            aria-label="{{ 'general.newsletter.placeholder' | t }}"
+          >
+
+          <label
+            class="form-field-title"
+            for="newsletter_email">
+            {{ 'general.newsletter.placeholder' | t }}
+          </label>
+        </div>
+
+        <div class="form-field newsletter-submit">
+          <button
+            id="contactFormSubmit"
+            class="button-primary"
+            name="subscribe"
+            type="submit" disabled>
+            {{ 'general.newsletter.subscribe' | t }}
+          </button>
+        </div>
+      </div>
+      <div id="re-captcha"></div>
+  </form>
+</div>
+
+<script async defer>
+  var actCallback = function (response) {
+    $('#contactFormSubmit').prop("disabled", false);
+    //$('#re-captcha').remove();
+  };
+  var expCallback = function() {
+    $('#contactFormSubmit').prop("disabled", true);
+  };
+  var onloadCallback = function () {
+    var widget = grecaptcha.render(document.getElementById("re-captcha"), {
+      'sitekey' : "6LcmN7gUAAAAACSbRCnS3-SfaL3fnzNHU8Sb_mjy", // Sitekey, Retrieving from reCaptcha
+      'theme': "light",
+      'callback' : actCallback,
+      'expired-callback': expCallback,
+    });
+  }
+</script>

@@ -1,0 +1,217 @@
+<section
+  class="account-page account-page-login"
+  data-template-account
+  data-template-account-login>
+  <header class="account-page-masthead">
+    <h1 class="account-page-title">
+      {{ 'customers.login.title' | t }}
+    </h1>
+  </header>
+
+  <article class="account-page-content">
+    <div class="account-login visible" data-account-login-main>
+      {% form 'customer_login' %}
+
+        {% if form.errors != blank %}
+          <div class="account-message message--error">
+            {{ form.errors | default_errors }}
+          </div>
+        {% endif %}
+
+        <div class="form-field">
+          <input
+            class="form-field-input form-field-text"
+            id="customer_email"
+            name="customer[email]"
+            type="text"
+            autocorrect="off"
+            autocapitalize="off">
+          <label
+            class="form-field-title"
+            for="customer_email">
+            {{ 'customers.forms.email' | t }}
+          </label>
+        </div>
+
+        {% if form.password_needed %}
+          <div class="form-field form-field--account-password">
+            <input
+              class="form-field-input form-field-text"
+              id="customer_password"
+              name="customer[password]"
+              type="password">
+            <label
+              class="form-field-title"
+              for="customer_password">
+              {{ 'customers.forms.password' | t }}
+            </label>
+            <button id="visibilityToggle" class="btn-visibility">
+              <span class="icon-visibility">{% include 'icon-visibility' %}</span>
+              <span class="icon-visibility" style="display: none;">{% include 'icon-visibility-off' %}</span>
+            </button>
+          </div>
+        {% endif %}
+
+        <div class="form-action-row">
+          <button class="button-primary form-action--submit" type="submit">
+            {{ 'customers.login.sign_in' | t }}
+          </button>
+
+          <div class="form-action-row--helper">
+            <span class="form-action-row--helper-item">
+              {{ 'customers.new_customer.title' | t }}
+              {{ 'customers.register.title' | t | customer_register_link }}
+            </span>
+
+            {% if form.password_needed %}
+              <span class="form-action-row--helper-item">
+                <a href="#customer_recovery" data-login-toggle>
+                  {{ 'customers.login.forgot_password' | t }}
+                </a>
+              </span>
+            {% endif %}
+          </div>
+        </div>
+
+      {% endform %}
+    </div>
+
+    <div
+      class="account-recovery"
+      id="customer_recovery"
+      data-account-login-recovery>
+      {% form 'recover_customer_password' %}
+
+        <h2 class="account-page-subtitle">
+          {{ 'customers.recover_password.title' | t }}
+        </h2>
+
+        <p>{{ 'customers.recover_password.subtitle' | t }}</p>
+
+        {% assign has_message = false %}
+
+        {% if form.errors != blank %}
+          {% assign has_message = true %}
+          {% assign message_type = 'error' %}
+        {% endif %}
+
+        {% if form.posted_successfully? %}
+          {% assign has_message = true %}
+          {% assign message_type = 'success' %}
+        {% endif %}
+
+        {% if has_message %}
+          <div class="account-message message--{{ message_type }}" data-recovery-has-message>
+            {% case message_type %}
+              {% when 'success' %}
+                <p>
+                  {{ 'customers.recover_password.success' | t }}
+                </p>
+              {% when 'error' %}
+                {{ form.errors | default_errors }}
+            {% endcase %}
+          </div>
+        {% endif %}
+
+        <div class="form-field">
+          <input
+            class="form-field-input form-field-text"
+            id="customer_recovery_email"
+            name="email"
+            type="text"
+            autocorrect="off"
+            autocapitalize="off">
+          <label
+            class="form-field-title"
+            for="customer_recovery_email">
+            {{ 'customers.forms.email' | t }}
+          </label>
+        </div>
+
+        <div class="form-action-row">
+          <button class="button-primary" type="submit">
+            {{ 'customers.forms.submit' | t }}
+          </button>
+
+          <button
+            class="button-secondary"
+            type="button"
+            data-login-toggle>
+            {{ 'customers.forms.cancel' | t }}
+          </button>
+        </div>
+      {% endform %}
+    </div>
+
+    {% if shop.checkout.guest_login %}
+      <div class="account-register account-register--guest">
+        <h2 class="account-register-subtitle">
+          {{ 'customers.guest_login.title' | t }}
+        </h2>
+
+        {% form 'guest_login' %}
+          <button class="button-primary" type="submit">
+            {{ 'customers.guest_login.submit' | t }}
+          </button>
+        {% endform %}
+      </div>
+    {% endif %}
+  </article>
+</section>
+
+<script>
+  var visibilityToggle = document.getElementById('visibilityToggle');
+  visibilityToggle.addEventListener('click', showPassword, false);
+  function showPassword(event) {
+    event.preventDefault();
+    var x = document.getElementById("customer_password");
+    var elems = document.getElementsByClassName("icon-visibility");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+    for (var i=0;i<elems.length;i+=1){
+      if (elems[i].style.display === "none") {
+        elems[i].style.display = "flex";
+      } else {
+        elems[i].style.display = "none";
+      }
+    }
+  }
+</script>
+
+<style>
+  .btn-visibility {
+    color: rgba(0, 0, 0, 0.54);
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    display: inline-flex;
+    outline: none;
+    padding: 12px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    align-items: center;
+    user-select: none;
+    border-radius: 50%;
+    vertical-align: middle;
+    justify-content: center;
+    -moz-appearance: none;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .btn-visibility:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .icon-visibility{
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+</style>

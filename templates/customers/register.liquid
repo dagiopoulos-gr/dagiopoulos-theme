@@ -1,0 +1,86 @@
+<section class="account-page account-page-register" data-template-account>
+  <header class="account-page-masthead">
+    <h1 class="account-page-title"> {{ 'customers.register.title' | t}} </h1>
+  </header>
+  <article class="account-page-content">
+    {% form 'create_customer', action: "https://vital-forms-api.ellipsis.cloud/api/form/vfob/e05b3d60-b57a-4f50-8a74-a24ab0c83674$5d7a09d032541e00c78e1157", data-vfib: "0" %}
+    {% assign has_message = false %} {% if form.errors != blank %} {% assign has_message = true %} {% assign message_type = 'error' %} {% endif %} {% if form.posted_successfully? %} {% assign has_message = true %} {% assign message_type = 'success' %} {% endif %} {% if has_message %} <div class="account-message form-message message--{{ message_type }}"> {% case message_type %} {% when 'success' %} <p> {{ 'customers.register.success' | t }} </p> {% when 'error' %} {{ form.errors | default_errors }} {% endcase %} </div> {% endif %} <div class="form-fields-columns">
+      <div class="form-field form-field--half"> <input type="text" class="form-field-input form-field-text" id="register_first_name" name="customer[first_name]" autocapitalize="words" autofocus {% if form.first_name %}value="{{ form.first_name }}" {% endif %}> <label class="form-field-title" for="register_first_name"> {{ 'customers.forms.first_name' | t }} </label> </div>
+      <div class="form-field form-field--half"> <input type="text" class="form-field-input form-field-text" id="register_last_name" name="customer[last_name]" autocapitalize="words" {% if form.last_name %}value="{{ form.last_name }}" {% endif %}> <label class="form-field-title" for="register_last_name"> {{ 'customers.forms.last_name' | t }} </label> </div>
+      <div class="form-field form-field--half"> <input type="text" class="form-field-input form-field-text {% if form.errors contains 'email' %}form-field-error{% endif %}" id="register_email" name="customer[email]" autocorrect="off" autocapitalize="off" {% if form.email %}value="{{ form.email }}" {% endif %}> <label class="form-field-title" for="register_email"> {{ 'customers.forms.email' | t }} </label> </div>
+      <div class="form-field form-field--half"> <input type="password" class="form-field-input form-field-text {% if form.errors contains 'password' %}form-field-error{% endif %}" id="register_password" name="customer[password]"> <label class="form-field-title" for="register_password"> {{ 'customers.forms.password' | t }} </label> <button id="visibilityToggle" class="btn-visibility"> <span class="icon-visibility">{% include 'icon-visibility' %}</span> <span class="icon-visibility" style="display: none;">{% include 'icon-visibility-off' %}</span> </button> </div> <!-- Marketing consent for Register Independent of Checkout -->
+      <div class="form-field">
+        <div> <input type="hidden" name="customer[accepts_marketing]" value="" /> <input type="checkbox" name="customer[accepts_marketing]" checked="checked" /> Θέλω να ενημερώνομαι για νέα και αποκλειστικές προσφορές! </div>
+      </div> <!-- End of Marketing consent -->
+    </div>
+    <div class="form-action-row"> <button class="button-primary form-action--submit" type="submit"> {{ 'customers.register.submit' | t }} </button>
+      <div class="form-action-row--helper"> <span class="form-action-row--helper-item"> {{ 'customers.register.returning_customer' | t }} {{ 'customers.login.sign_in' | t | customer_login_link }} </span> </div>
+    </div> {% endform %}
+  </article>
+</section>
+<script>
+  var visibilityToggle = document.getElementById('visibilityToggle');
+  visibilityToggle.addEventListener('click', showPassword, false);
+
+  function showPassword(event)
+  {
+    event.preventDefault();
+    var x = document.getElementById("register_password");
+    var elems = document.getElementsByClassName("icon-visibility");
+    if (x.type === "password")
+    {
+      x.type = "text";
+    }
+    else
+    {
+      x.type = "password";
+    }
+    for (var i = 0; i < elems.length; i += 1)
+    {
+      if (elems[i].style.display === "none")
+      {
+        elems[i].style.display = "flex";
+      }
+      else
+      {
+        elems[i].style.display = "none";
+      }
+    }
+  }
+</script>
+<style>
+  .btn-visibility {
+    color: rgba(0, 0, 0, 0.54);
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    display: inline-flex;
+    outline: none;
+    padding: 12px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    align-items: center;
+    user-select: none;
+    border-radius: 50%;
+    vertical-align: middle;
+    justify-content: center;
+    -moz-appearance: none;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .btn-visibility:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .icon-visibility {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+</style>

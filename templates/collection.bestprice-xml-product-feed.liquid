@@ -1,0 +1,35 @@
+{% layout none %}<?xml version="1.0" encoding="UTF-8"?>
+{% paginate collection.products by 250 %}<dagiopoulos>
+  <date>{{ "now" | date: "%F" }}</date>
+  <products>
+    {% for product in collection.products %}
+    {% for collection in product.collections %}
+      {% if collection.handle != 'skroutz-feed' and collection.handle != 'bestprice-feed' %}
+        {% assign cat = collection.handle | split: '-' | first %}
+        {% assign cat_title = cat | capitalize | replace: 'Chromata', 'Χρώματα' | replace: 'Monosi', 'Μόνωση' | replace: 'Vernikia', 'Βερνίκια'| replace: 'Diakosmisi', 'Διακόσμηση'| replace: 'Zografiki_hobby', 'Ζωγραφική'| replace: 'Chroma_verniki', 'Χρώμα & Βερνίκι'| replace: 'Ergaleia_axesouar_vafis', 'Εργαλεία & Αξεσουάρ Βαφής'| replace: 'Ergaleia', 'Εργαλεία'| replace: 'Prostasia_simansi', 'Προστασία'| replace: 'Asfaleia', 'Ασφάλεια'| replace: 'Diy', 'DIY' %}
+        {% capture collection_title %}{% if cat_title == 'Εργαλεία & Αξεσουάρ Βαφής' %}{{ cat_title | prepend: 'Χρώματα > '}}{% else %}{{cat_title}}{% endif %} > {{ collection.title }}{% endcapture %}
+        {% capture collection_id %}{{ collection.id }}{% endcapture %}
+      {% endif %}
+    {% endfor %}
+    
+    {% for variant in product.variants %}
+    {% capture product_title %}{{ product.title }} {% unless variant.title == 'Default Title'  %}{{ variant.title }}{% endunless %}{% endcapture %}
+    {% unless variant.price == 0 %}
+    <product>
+      <productId>{{ variant.id }}</productId>
+      <title><![CDATA[{{ product_title }}]]></title>
+      <price>{{ variant.price | money_without_currency }}</price>
+      <image>{% if variant.image.src  %}{{ variant.image.src | product_img_url: 'large' | prepend: 'https:' }}{% else %}{{ product.featured_image | product_img_url: 'large' | prepend: 'https:' }}{% endif %}</image>
+      <productURL>{{ shop.url }}{{ variant.url }}</productURL>
+      <category_name><![CDATA[{{ collection_title }}]]></category_name>
+      <manufacturer>{{ product.vendor }}</manufacturer>
+      <barcode>{{ variant.barcode }}</barcode>
+      <sku>{{ variant.sku }}</sku>
+      <stock>{% if variant.available %}Y{% else %}N{% endif %}</stock>
+      <availability>{% if variant.available %}{{ 'product.shipping.delivery' | t }}{% else %}Εξαντλήθηκε{% endif %}</availability>
+    </product>
+    {% endunless %}
+    {% endfor %}
+    {% endfor %}
+  </products>
+</dagiopoulos>{% endpaginate %}

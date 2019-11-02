@@ -1,0 +1,19 @@
+{% layout none %}<?xml version="1.0" encoding="UTF-8"?>
+{% paginate collection.products by 1000 %}<dagiopoulos>
+  <created_at>{{ "now" | date: "%F" }}</created_at>
+  <products>
+    {% for product in collection.products %}{% for collection in product.collections %}{% if collection.handle != 'skroutz-feed' and collection.handle != 'discount-products' and collection.handle != 'all-products' and collection.handle != 'best-price-feed' and collection.handle != 'facebook-feed'  %}{% capture collectionTitle %}{{ collection.handle | replace: '_', ' ' | replace: '-', ' > ' }}{% endcapture %}{% endif %}{% endfor %}<product>
+      <id>{{product.id}}</id>
+      <name><![CDATA[{{ product.title }}]]></name>
+      <url><![CDATA[{{shop.url}}{{product.url}}]]></url>
+      <image><![CDATA[{{product.featured_image | product_img_url: 'large' | prepend: 'https:'}}]]></image>
+      <category><![CDATA[{{ collectionTitle }}]]></category>
+      <price_with_vat>{{product.price | money_without_currency}}</price_with_vat>
+      <manufacturer><![CDATA[{{ product.vendor }}]]></manufacturer>
+      <mpn>{{ product.variants.first.sku }}</mpn>
+      <instock>{% if product.available %}Y{% else %}N{% endif %}</instock>
+      <availability>{% if product.available %}Άμεση παραλαβή / Παράδοση 1 έως 3 ημέρες{% else %}Μη διαθέσιμο{% endif %}</availability>
+    </product>
+    {% endfor %}
+  </products>
+</dagiopoulos>{% endpaginate %}

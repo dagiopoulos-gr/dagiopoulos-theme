@@ -1,0 +1,67 @@
+
+
+{% assign hc_storefront_status  = shop.metafields.helpfulcrowd.global.storefront_status %}
+{% if product and hc_storefront_status == "active" %}
+  {% assign hc_show_qa		      = shop.metafields.helpfulcrowd.global.show_qa  | plus: 0 %}
+  {% assign hc_easy_reviews     = shop.metafields.helpfulcrowd.global.easy_reviews %}
+  {% assign hc_reviews_count    = product.metafields.helpfulcrowd.product.reviews_count | plus: 0 %}
+  {% assign hc_qa_count         = product.metafields.helpfulcrowd.product.qa_count | plus: 0 %}
+  {% assign hc_rating 		      = product.metafields.helpfulcrowd.product.rating | plus: 0 %}
+  {% assign hc_suppressed	      = product.metafields.helpfulcrowd.product.suppressed | plus: 0 %}
+  {% assign hc_summary_position = shop.metafields.helpfulcrowd.global.summary_position %}
+  {% assign hc_id 			        = shop.metafields.helpfulcrowd.global.store_id %}
+  {% assign hc_theme 			      = shop.metafields.helpfulcrowd.global.theme %}
+  {% assign hc_locale			      = shop.metafields.helpfulcrowd.global.locale %}
+
+  {% if hc_suppressed < 1 %}
+    <div class="hc-widget">
+      <div data-hc="product-summary" data-hc-id="{{ product.id }}" data-hc-store-id="{{ hc_id }}" class="{{ hc_theme }}">
+        <div class="hc-product-summary hc-product-summary--{{ hc_summary_position }}">
+          <div class="hc-product-summary__reviews">
+            <span class="hc-product-summary__rating">
+              {% include 'hc-stars' %}
+            </span>
+            {% if hc_reviews_count > 0 %}
+              {{ hc_rating }}
+              {% if hc_reviews_count == 1 %}
+                <a data-hc-scroll-to="true" data-hc-scroll-target="#hc-product-tabs" class="hc-product-summary__review-count" href="#hc-reviews-tab">
+                  based on 1 review
+                </a>
+              {% else %}
+                <a data-hc-scroll-to="true" data-hc-scroll-target="#hc-product-tabs" class="hc-product-summary__review-count" href="#hc-reviews-tab">
+                  based on {{hc_reviews_count}} reviews
+                </a>
+              {% endif %}
+            {% elsif hc_easy_reviews > 0 %}
+              <a data-hc-scroll-to="true" data-hc-scroll-target="#hc-product-tabs" href="#hc-reviews-tab">
+                Write review
+              </a>
+            {% else %}
+              No reviews yet
+            {% endif %}
+          </div>
+          {% if hc_show_qa > 0 %}
+             |
+            <div class="hc-product-summary__qa">
+              {% if hc_qa_count > 0 %}
+                {% if hc_reviews_count == 1 %}
+                  <a data-hc-scroll-to="true" data-hc-scroll-target="#hc-product-tabs" class="hc-product-summary__review-count" href="#hc-questions-tab">
+                    1 question
+                  </a>
+                {% else %}
+                  <a data-hc-scroll-to="true" data-hc-scroll-target="#hc-product-tabs" class="hc-product-summary__review-count" href="#hc-questions-tab">
+                    {{hc_qa_count}} questions
+                  </a>
+                {% endif %}
+              {% else %}
+                <a data-hc-scroll-to="true" data-hc-scroll-target="#hc-product-tabs" href="#hc-questions-tab">
+                  Ask question
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endif %}

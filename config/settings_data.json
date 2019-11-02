@@ -1,0 +1,1361 @@
+{
+  "current": {
+    "color_background": "#ffffff",
+    "color_headings": "#222222",
+    "color_text": "#222222",
+    "color_links": "#ff6600",
+    "color_button_background": "#ff6600",
+    "color_button_text": "#ffffff",
+    "color_header_background": "#3c3c3c",
+    "color_header_text": "#ffffff",
+    "color_footer_background": "#f8f8f8",
+    "color_footer_text": "#5c5c5c",
+    "font_body": "Google_Roboto+Condensed_400,400i,700,700i",
+    "font_heading": "Google_Roboto+Condensed_400,400i,700,700i",
+    "product_show_vendor": false,
+    "product_enable_recently_viewed_products": false,
+    "product_option_style": "select",
+    "product_sales_badge": true,
+    "product_sales_badge_style": "percentile",
+    "product_ratings_reviews": true,
+    "product_social_sharing": false,
+    "product_cart_redirect": false,
+    "product_slideshow_style": "natural",
+    "product_grid_emphasize_price": true,
+    "product_grid_image_style": "medium",
+    "product_grid_quick_look": true,
+    "product_grid_quick_buy": true,
+    "social_facebook": "https:\/\/www.facebook.com\/PaintPlusNtagiopoulos\/",
+    "social_twitter": "",
+    "social_google": "",
+    "social_pinterest": "https:\/\/gr.pinterest.com\/ntagiopoulos\/",
+    "social_instagram": "https:\/\/www.instagram.com\/nikosntagiopoulos\/",
+    "social_tumblr": "",
+    "social_vimeo": "",
+    "social_youtube": "https:\/\/www.youtube.com\/channel\/UCvQWWkQOeN8gGD-PKooxaFQ\/featured?view_as=subscriber",
+    "social_email": "eshop@dagiopoulos.gr",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "enable_currency_converter": false,
+    "currency_display_format": "money_format",
+    "currency_converter_currencies": "INR GBP CAD USD AUD EUR JPY",
+    "currency_converter_default": "EUR",
+    "continue_shopping_url": "shopify:\/\/collections\/all",
+    "continue_url_cart": false,
+    "continue_url_404": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/112-4.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Roboto",
+    "checkout_accent_color": "#ff6600",
+    "checkout_button_color": "#ff6600",
+    "checkout_error_color": "#f01d1d",
+    "sections": {
+      "static-collection": {
+        "type": "static-collection",
+        "blocks": {
+          "1570912505806": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          }
+        },
+        "block_order": [
+          "1570912505806"
+        ],
+        "settings": {
+          "show_collection_image": false,
+          "show_collection_description": true,
+          "products_per_page_range": 36,
+          "sort_by": true,
+          "show_by": true,
+          "grid_list": true,
+          "show_sidebar": true,
+          "filter_style": "groups",
+          "filter_limit": "10",
+          "filter_position": "below_menus",
+          "menu_depth_range": 2
+        }
+      },
+      "home-promo-mosaic": {
+        "type": "dynamic-promo-mosaic",
+        "blocks": {
+          "home-promo-mosaic-1": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/009_1920x550_ecb7c0a3-c890-488a-9493-b91dd9e3feab.jpg",
+              "title": "Αποθήκευση",
+              "text": "Ντουλάπες, μπαούλα αποθήκευσης, κουτιά φύλαξης, παπουτσοθήκες, συρταριέρες, ραφιέρες",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/apothikeusi-ntoulapa-mpaoulo-kouti",
+              "button_text": "Αγοράστε τώρα",
+              "button_style": "primary",
+              "show_overlay": true,
+              "background": "#000000",
+              "opacity": 20
+            }
+          },
+          "home-promo-mosaic-2": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Stanley_Air_Compressor_003.jpg",
+              "title": "Αεροσυμπιεστές Stanley",
+              "text": "Μοναδικές προσφορές με την εγγύηση Stanley",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/stanley-air-compressors",
+              "button_text": "Αγοράστε τώρα",
+              "button_style": "primary",
+              "show_overlay": true,
+              "background": "#000000",
+              "opacity": 15
+            }
+          },
+          "home-promo-mosaic-3": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/011_1920x550_766c3b7b-7505-45ac-9438-de7134ee50e6.jpg",
+              "title": "Ασφάλεια",
+              "text": "Βρείτε τα πιο Ασφαλή Χρηματοκιβώτια, Κλειδοθήκες και Οπλοκιβώτια (Οικιακή & Επαγγελματική Χρήση)",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/asfaleia_chrimatokivotia",
+              "button_text": "Αγοράστε τώρα",
+              "button_style": "primary",
+              "show_overlay": true,
+              "background": "#000000",
+              "opacity": 19
+            }
+          },
+          "home-promo-mosaic-4": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/101_03-2.jpg",
+              "title": "ABUS",
+              "text": "Τα κορυφαία Λουκέτα και Κλειδαριές για Ποδήλατα & Μηχανές",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/abus-asfaleia-security",
+              "button_text": "Ειδικές Προσφορές",
+              "button_style": "primary",
+              "show_overlay": true,
+              "background": "#000000",
+              "opacity": 24
+            }
+          },
+          "1520543891640": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ergaleia-kai-parelkomena-vafis-1024x1024-homepage.jpg",
+              "title": "Εργαλεία & Παρελκόμενα Βαφής",
+              "text": "Ό,τι χρειάζεστε για να βάψετε, εκτός από χρώματα",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/ergaleia-parelkomena-vafis",
+              "button_text": "Αγοράστε τώρα",
+              "button_style": "primary",
+              "show_overlay": true,
+              "background": "#000000",
+              "opacity": 43
+            }
+          }
+        },
+        "block_order": [
+          "home-promo-mosaic-1",
+          "home-promo-mosaic-2",
+          "home-promo-mosaic-3",
+          "home-promo-mosaic-4",
+          "1520543891640"
+        ],
+        "settings": {
+          "title": "",
+          "section_height": "small",
+          "text_alignment": "top-left",
+          "maintain_aspect_ratio": false,
+          "compress_blocks": true
+        }
+      },
+      "static-header": {
+        "type": "static-header",
+        "settings": {
+          "sticky_header": false,
+          "logo": "shopify:\/\/shop_images\/112-4.png",
+          "logo_height": 100,
+          "logo_width": 250,
+          "enable_live_search": true,
+          "enable_live_search_images": true,
+          "enable_live_search_articles_pages": true,
+          "quick_links": "main-menu",
+          "menu": "main-menu",
+          "announcement_text": "",
+          "announcement_text_mobile": "",
+          "announcement_link": "",
+          "announcement_color": "#ffffff",
+          "announcement_background": "#006c82",
+          "small_promo_heading": "Παραγγελίες:",
+          "small_promo_text": "27210 62345 \/ 27210 26526\nή \neshop@dagiopoulos.gr",
+          "small_promo_text_mobile": "27210 62345",
+          "small_promo_link": "",
+          "small_promo_icon": "icon-chat",
+          "image": ""
+        }
+      },
+      "static-slideshow": {
+        "type": "static-slideshow",
+        "blocks": {
+          "1566561876595": {
+            "type": "slide",
+            "settings": {
+              "background_image": "shopify:\/\/shop_images\/slider-parts_21fcdeae-62f3-4bd4-a742-3af351771414.jpg",
+              "heading": "Ό,τι ψάχνεις είναι εδώ!",
+              "text": "",
+              "color": "#ffffff",
+              "link": "",
+              "button_one_label": "",
+              "button_one_link": "",
+              "button_one_style": "primary",
+              "button_two_label": "",
+              "button_two_link": "",
+              "button_two_style": "primary",
+              "show_overlay": true,
+              "overlay_color": "#000000",
+              "overlay_opacity": 49
+            }
+          }
+        },
+        "block_order": [
+          "1566561876595"
+        ],
+        "settings": {
+          "show_slideshow": true,
+          "enable_autoplay": true,
+          "autoplay_duration": 5,
+          "slideshow_height": "small"
+        }
+      },
+      "static-highlights-banners": {
+        "type": "static-highlights-banners",
+        "blocks": {
+          "1571261238882": {
+            "type": "highlight",
+            "settings": {
+              "icon": "icon-delivery",
+              "image": "shopify:\/\/shop_images\/greece-map.png",
+              "title": "Στέλνουμε ΠΑΝΤΟΥ",
+              "text": "Αποστολές σε όλη Ελλάδα (όλα τα προϊόντα)!",
+              "link": ""
+            }
+          },
+          "static-highlights-banners-0": {
+            "type": "highlight",
+            "settings": {
+              "icon": "icon-chat",
+              "image": "shopify:\/\/shop_images\/b2b-logo-2.png",
+              "title": "Είστε Επαγγελματίας ή Ξενοδόχος;",
+              "text": "Γραφτείτε & Κερδίστε Ειδικές Τιμές & Εκπτώσεις",
+              "link": "shopify:\/\/pages\/epikoinonia"
+            }
+          },
+          "1571261546016": {
+            "type": "highlight",
+            "settings": {
+              "icon": "icon-delivery",
+              "image": "",
+              "title": "Επιλογές Δωρεάν Μεταφορικών",
+              "text": "ΔΩΡΕΑΝ Αποστολές σε ΟΛΗ την Ελλάδα για Πλειάδα Προϊόντων",
+              "link": "shopify:\/\/pages\/free-transport"
+            }
+          },
+          "1571262110717": {
+            "type": "highlight",
+            "settings": {
+              "icon": "icon-pin",
+              "image": "",
+              "title": "Δωρεάν Παραλαβές στην Αττική",
+              "text": "Παραλάβετε ΔΩΡΕΑΝ την Παραγγελία σας & στην Αθήνα (Ορφέος 160, Βοτανικός)",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1571261238882",
+          "static-highlights-banners-0",
+          "1571261546016",
+          "1571262110717"
+        ],
+        "settings": {
+          "show_highlights_banner": true,
+          "color": "#ffffff",
+          "icon_color": "#fffcfc",
+          "background_color": "#ff6600"
+        }
+      },
+      "static-footer": {
+        "type": "static-footer",
+        "blocks": {
+          "1520280385039": {
+            "type": "menu",
+            "settings": {
+              "menu": "main-menu"
+            }
+          },
+          "1520281184842": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer-about-us"
+            }
+          },
+          "static-footer-0": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer-customer-service"
+            }
+          },
+          "1520281234147": {
+            "type": "social_accounts",
+            "settings": {}
+          },
+          "1545345239046": {
+            "type": "newsletter",
+            "settings": {
+              "title": "μείνετε ενημερωμένοι",
+              "text": "<p>&Kappa;ά&nu;&tau;&epsilon; &tau;&eta;&nu; &epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή &sigma;&alpha;&sigmaf; &epsilon;&delta;ώ &kappa;&alpha;&iota; &mu;&epsilon;ί&nu;&epsilon;&tau;&epsilon; &epsilon;&nu;&eta;&mu;&epsilon;&rho;&omega;&mu;έ&nu;&omicron;&iota; &mu;&epsilon; &nu;έ&alpha; &pi;&rho;&omicron;ϊό&nu;&tau;&alpha;, &pi;&alpha;&rho;&omicron;&upsilon;&sigma;&iota;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; &pi;&rho;&omicron;&sigma;&phi;&omicron;&rho;έ&sigmaf;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1520280385039",
+          "1520281184842",
+          "static-footer-0",
+          "1520281234147",
+          "1545345239046"
+        ],
+        "settings": {
+          "payment_icons": true,
+          "additional_menu": "footer"
+        }
+      },
+      "static-product": {
+        "type": "static-product",
+        "settings": {
+          "layout": "layout--three-col",
+          "enable_related_products": true,
+          "enable_video_autoplay": true
+        }
+      },
+      "static-cart": {
+        "type": "static-cart",
+        "settings": {
+          "enable_order_notes": true,
+          "enable_shipping_calc": false,
+          "shipping_calc_default_country": "Ελλάδα"
+        }
+      },
+      "static-blog": {
+        "type": "static-blog",
+        "settings": {
+          "show_rss_link": false,
+          "show_date": true,
+          "show_author": false,
+          "show_excerpt": true,
+          "featured_post": "blog\/pos-na-ananeosete-tous-toichous-sas-i-vasiki-lista-ergasion-gia-to-vapsimo-toichon",
+          "posts_per_page_range": 9
+        }
+      },
+      "static-article": {
+        "type": "static-article",
+        "settings": {
+          "show_date": false,
+          "show_author": false,
+          "use_share_buttons": true
+        }
+      },
+      "1521029536365": {
+        "type": "dynamic-featured-collection",
+        "disabled": true,
+        "settings": {
+          "title": "Ιταλική Ποιότητα στην Αποθήκευση",
+          "collection": "terry-italian-collection",
+          "banner_color": "#ff5000",
+          "banner_image": "shopify:\/\/shop_images\/104_500x750_d9c09851-a7dd-4de6-8dba-cb189150f0c6.jpg"
+        }
+      },
+      "1521032127451": {
+        "type": "dynamic-logo-list",
+        "blocks": {
+          "1521032127451-1": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/einza_800x800-2.png",
+              "link": "\/collections\/vendors?q=einza"
+            }
+          },
+          "1521032127451-0": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Kraft_002_800x800_fb493c30-362f-4304-bf7e-15bd6cbc8907.png",
+              "link": "\/collections\/vendors?q=Kraft%20Paints"
+            }
+          },
+          "1521032127451-2": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BenjaminMoore_002_800x800_a25eb97c-3c3d-4ca1-9d2d-1857d54de83e.png",
+              "link": "\/collections\/vendors?q=Benjamin%20Moore"
+            }
+          },
+          "1521032127451-3": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Vivechrom_001_800x800_4f6c460b-0b9d-418d-8968-215eeff0b005.png",
+              "link": "\/collections\/vendors?q=Vivechrom"
+            }
+          },
+          "1521035828750": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ABUS_002_800x800_1f67297d-a84c-46e1-9fb5-c3069eb3f68c.png",
+              "link": "\/collections\/vendors?q=Abus"
+            }
+          },
+          "1530829062222": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Zenit_002_800x800_6d2ab3bb-7954-43b0-bd43-3fafdee31c01.png",
+              "link": "\/collections\/vendors?q=Zenit"
+            }
+          },
+          "1530829267231": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Maris_002_800x800_17e723da-a5a0-4ca2-ae81-c3ba7c4f646f.png",
+              "link": "collections\/vendors?q=Maris%20Polymers"
+            }
+          },
+          "1530829275993": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ANNOVI_002_800x800_861bc6ef-aff7-4b2a-9eb7-c1cf69aab1d9.png",
+              "link": "\/collections\/vendors?q=annovi%20reverberi"
+            }
+          },
+          "1530829911775": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/CEYS_001_800x800-2.png",
+              "link": "\/collections\/vendors?q=ceys"
+            }
+          },
+          "1549211369909": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Vitex_001_800x800_e42fb4a3-72df-4354-814f-6d20b5cb8927.png",
+              "link": "\/collections\/vendors?q=vitex"
+            }
+          },
+          "1549211890021": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Elastotet_001_800x800-2.png",
+              "link": "\/collections\/vendors?q=elastotet"
+            }
+          },
+          "1549213070445": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/RoyalTalens_002_800x800_54aef13e-2ac5-48be-a979-308bc2e35fd4.png",
+              "link": "\/collections\/vendors?q=royal%20talens"
+            }
+          },
+          "1549214472605": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Stanley_002_800x800_368fdea8-b5e7-4d75-b487-ecebdc3b1356.png",
+              "link": "\/collections\/vendors?q=stanley"
+            }
+          },
+          "1549214816894": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Erlac_002_800x800-2.png",
+              "link": "\/collections\/vendors?q=erlac"
+            }
+          },
+          "1549215171932": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Convex_002_800x800-2.png",
+              "link": "\/collections\/vendors?q=convex"
+            }
+          },
+          "1549215386291": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ICA_004_800x800-2.png",
+              "link": "\/collections\/vendors?q=ica"
+            }
+          },
+          "1549220717954": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Novamix_001_800x800-2.png",
+              "link": "\/collections\/vendors?q=novamix"
+            }
+          },
+          "1549222000691": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/RustOleum_001_800x800-2.png",
+              "link": "\/collections\/vendors?q=rust%20oleum"
+            }
+          }
+        },
+        "block_order": [
+          "1521032127451-1",
+          "1521032127451-0",
+          "1521032127451-2",
+          "1521032127451-3",
+          "1521035828750",
+          "1530829062222",
+          "1530829267231",
+          "1530829275993",
+          "1530829911775",
+          "1549211369909",
+          "1549211890021",
+          "1549213070445",
+          "1549214472605",
+          "1549214816894",
+          "1549215171932",
+          "1549215386291",
+          "1549220717954",
+          "1549222000691"
+        ],
+        "settings": {
+          "title": "Προϊόντα ανά Εταιρεία"
+        }
+      },
+      "static-list-collections": {
+        "type": "static-list-collections",
+        "settings": {}
+      },
+      "1545914861439": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "Κάθε μέρα και νέες προσφορές",
+          "collection": "nees-afixeis",
+          "banner_color": "rgba(0,0,0,0)",
+          "banner_image": "shopify:\/\/shop_images\/005.jpg"
+        }
+      },
+      "1548087371235": {
+        "type": "dynamic-collection-list",
+        "blocks": {
+          "1548087371235-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "spray",
+              "image": ""
+            }
+          },
+          "1548087371235-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "ergaleia-ilektrika",
+              "image": ""
+            }
+          },
+          "1548087371235-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "decoupage",
+              "image": ""
+            }
+          },
+          "1548087371235-3": {
+            "type": "collection",
+            "settings": {
+              "collection": "zografiki_agiografia",
+              "image": ""
+            }
+          },
+          "1548087384228": {
+            "type": "collection",
+            "settings": {
+              "collection": "pagides-entomon-troktikon",
+              "image": ""
+            }
+          },
+          "1548087589361": {
+            "type": "collection",
+            "settings": {
+              "collection": "profil",
+              "image": ""
+            }
+          },
+          "1548087766208": {
+            "type": "collection",
+            "settings": {
+              "collection": "parking-odopoiia-simansi",
+              "image": ""
+            }
+          },
+          "1568283141391": {
+            "type": "collection",
+            "settings": {
+              "collection": "cleaners",
+              "image": ""
+            }
+          },
+          "1568283173342": {
+            "type": "collection",
+            "settings": {
+              "collection": "diakosmisi-diakosmitiki_efkampti_petra",
+              "image": ""
+            }
+          },
+          "1568283202691": {
+            "type": "collection",
+            "settings": {
+              "collection": "ergaleia-xeiros",
+              "image": ""
+            }
+          },
+          "1570743923155": {
+            "type": "collection",
+            "settings": {
+              "collection": "tainies",
+              "image": ""
+            }
+          },
+          "1570743955158": {
+            "type": "collection",
+            "settings": {
+              "collection": "diy-kolles",
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1548087371235-0",
+          "1548087371235-1",
+          "1548087371235-2",
+          "1548087371235-3",
+          "1548087384228",
+          "1548087589361",
+          "1548087766208",
+          "1568283141391",
+          "1568283173342",
+          "1568283202691",
+          "1570743923155",
+          "1570743955158"
+        ],
+        "settings": {
+          "title": "Best Sellers"
+        }
+      },
+      "1570470840487": {
+        "type": "dynamic-blog-posts",
+        "settings": {
+          "title": "Άρθρα - Προτάσεις",
+          "blog": "blog",
+          "show_date": false,
+          "show_author": false,
+          "show_excerpt": false
+        }
+      },
+      "1570739187194": {
+        "type": "dynamic-menu-list",
+        "blocks": {
+          "1570739187194-0": {
+            "type": "menu",
+            "settings": {
+              "menu": "link-list-2",
+              "image": ""
+            }
+          },
+          "1570739187194-1": {
+            "type": "menu",
+            "settings": {
+              "menu": "link-list-3",
+              "image": ""
+            }
+          },
+          "1570739187194-2": {
+            "type": "menu",
+            "settings": {
+              "menu": "link-list-4",
+              "image": ""
+            }
+          },
+          "1570739187194-3": {
+            "type": "menu",
+            "settings": {
+              "menu": "link-list-5",
+              "image": ""
+            }
+          },
+          "1570739187194-4": {
+            "type": "menu",
+            "settings": {
+              "menu": "link-list-6",
+              "image": ""
+            }
+          },
+          "1570739187194-5": {
+            "type": "menu",
+            "settings": {
+              "menu": "link-list-7",
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1570739187194-0",
+          "1570739187194-1",
+          "1570739187194-2",
+          "1570739187194-3",
+          "1570739187194-4",
+          "1570739187194-5"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1548831263713": {
+        "type": "dynamic-promo-grid",
+        "disabled": true,
+        "blocks": {
+          "1568933641463": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/414457.jpg",
+              "title": "παιδική προστασία",
+              "text": "προλάβετε τα μικρά καθημερινά ατυχήματα",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/paidiki-prostasia",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "half-width",
+              "show_overlay": true,
+              "background": "#4d4d4d",
+              "opacity": 24
+            }
+          },
+          "1549222793611": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mood_pinselberater.jpg",
+              "title": "βάλτε τη φαντασία σας στους χώρους σας",
+              "text": "ελευθερώστε τη φαντασία σας στα δωμάτιά σας, διαλέγοντας  από μια μεγάλη ποικιλία χρωμάτων",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/chromata-esoterikon-toichon",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "half-width",
+              "show_overlay": true,
+              "background": "#000000",
+              "opacity": 20
+            }
+          },
+          "1558403066137": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/COLORE-IN-ARCHITETTURA.jpg",
+              "title": "εξωτερικές βαφές",
+              "text": "προστατεύστε την περιουσία σας με το σωστό τρόπο",
+              "color": "#fafafa",
+              "block_link": "shopify:\/\/collections\/chromata-exoterikis-toichopoiias",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "half-width",
+              "show_overlay": true,
+              "background": "#222222",
+              "opacity": 23
+            }
+          },
+          "1548831263713-0": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/acrylic-125ml-collection-cover-800x400-1f237d55-1138-4a28-b071-65fbf9fec299-1024x1024.jpg",
+              "title": "talens amsterdam acrylics",
+              "text": "ειδικές τιμές προσφοράς στα ακρυλικά χρώματα ζωγραφικής Amsterdam της Royal Talens",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/talens-amsterdam-acrylics-special-offer",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "half-width",
+              "show_overlay": true,
+              "background": "#000000",
+              "opacity": 31
+            }
+          },
+          "1549410435886": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/OGA3670_600x400_1f468cf3-8247-45b7-93c8-9cae3f346f03.png",
+              "title": "κάδοι",
+              "text": "επαγγελματικοί κάδοι απορριμάτων μεγάλης αντοχής & ποιότητας",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/kadoi",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "half-width",
+              "show_overlay": true,
+              "background": "#021f12",
+              "opacity": 50
+            }
+          },
+          "1549410782999": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/img-certifications_600x400_cc414e9e-ab95-4ba1-a921-c621ffbd9343.png",
+              "title": "παπούτσια εργασίας",
+              "text": "πραγματικά ποιοτική προστασία",
+              "color": "#fdfffd",
+              "block_link": "shopify:\/\/collections\/papoutsia-botes-galotses-prostasia",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "half-width",
+              "show_overlay": true,
+              "background": "#4d4d4d",
+              "opacity": 23
+            }
+          },
+          "1555774133964": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/GIZA_____NTAGIOPOULOS.jpg",
+              "title": "υδρορροές U-PVC",
+              "text": "υψηλών αντοχών, εύκολης τοποθέτησης & οικονομική τιμή",
+              "color": "#ffffff",
+              "block_link": "https:\/\/dagiopoulos.gr\/collections\/systima-ydrorroi",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "half-width",
+              "show_overlay": true,
+              "background": "#4d4d4d",
+              "opacity": 49
+            }
+          },
+          "1558458631868": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/010_1920x550_cbe783dd-e681-4733-be67-24b39b92ac5b.jpg",
+              "title": "κιγκαλερία",
+              "text": "πόμολα - πομολάκια - λαβίτσες - λαβές - μπουλ",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/kigkaleria",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "half-width",
+              "show_overlay": true,
+              "background": "#222222",
+              "opacity": 24
+            }
+          },
+          "1549189411993": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Vault_Mesquite_CXT_Overlook.jpg",
+              "title": "έπιπλα κήπου & decks",
+              "text": "καθαρίστε & συντηρήστε με τα σωστά υλικά εύκολα & οικονομικά",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/oil-deck",
+              "button_text": "",
+              "button_style": "primary",
+              "promo_width": "full-width",
+              "show_overlay": false,
+              "background": "#4d4d4d",
+              "opacity": 1
+            }
+          }
+        },
+        "block_order": [
+          "1568933641463",
+          "1549222793611",
+          "1558403066137",
+          "1548831263713-0",
+          "1549410435886",
+          "1549410782999",
+          "1555774133964",
+          "1558458631868",
+          "1549189411993"
+        ],
+        "settings": {
+          "title": "",
+          "section_height": "small",
+          "text_alignment": "center-left",
+          "maintain_aspect_ratio": true,
+          "compress_blocks": true
+        }
+      },
+      "1570745828705": {
+        "type": "dynamic-promo-mosaic",
+        "disabled": true,
+        "blocks": {
+          "1570745828705-0": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EinzA_114.jpg",
+              "title": "125 χρόνια einzA",
+              "text": "Γνωρίστε την εταιρεία με τη μεγαλύτερη αναγνωρισμότητα ποιότητας από τους Γερμανούς επαγγελματίες",
+              "color": "#ff6000",
+              "block_link": "shopify:\/\/collections\/einza",
+              "button_text": "",
+              "button_style": "primary",
+              "show_overlay": true,
+              "background": "#555c6a",
+              "opacity": 18
+            }
+          },
+          "1570745828705-1": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Monica-2.jpg",
+              "title": "",
+              "text": "Το χειροποίητο ποιοτικό πινέλο   έχει ένα όνομα και λέγεται",
+              "color": "#ffffff",
+              "block_link": "shopify:\/\/collections\/zenit",
+              "button_text": "",
+              "button_style": "primary",
+              "show_overlay": false,
+              "background": "",
+              "opacity": 50
+            }
+          },
+          "1570745828705-2": {
+            "type": "promotion",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PrattLambert_Logo_002.png",
+              "title": "",
+              "text": "100% Αμερικανική Ποιότητα",
+              "color": "#000000",
+              "block_link": "shopify:\/\/collections\/pratt-lambert",
+              "button_text": "",
+              "button_style": "primary",
+              "show_overlay": true,
+              "background": "#555c6a",
+              "opacity": 9
+            }
+          }
+        },
+        "block_order": [
+          "1570745828705-0",
+          "1570745828705-1",
+          "1570745828705-2"
+        ],
+        "settings": {
+          "title": "",
+          "section_height": "small",
+          "text_alignment": "top-left",
+          "maintain_aspect_ratio": false,
+          "compress_blocks": true
+        }
+      },
+      "static-collection-list": {
+        "type": "static-collection-list",
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "1545914861439",
+      "home-promo-mosaic",
+      "1570739187194",
+      "1570745828705",
+      "1548831263713",
+      "1548087371235",
+      "1521029536365",
+      "1521032127451",
+      "1570470840487"
+    ]
+  },
+  "presets": {
+    "Supply": {
+      "color_background": "#ffffff",
+      "color_headings": "#222222",
+      "color_text": "#4d4d4d",
+      "color_links": "#29927d",
+      "color_button_background": "#ffab41",
+      "color_button_text": "#1a390c",
+      "color_header_background": "#30656b",
+      "color_header_text": "#ffffff",
+      "color_footer_background": "#f8f8f8",
+      "color_footer_text": "#5c5c5c",
+      "font_body": "Google_Cabin_400,400i,700,700i",
+      "font_heading": "Google_Cabin_400,400i,700,700i",
+      "continue_shopping_url": "shopify:\/\/collections\/all",
+      "sections": {
+        "home-promo-mosaic": {
+          "type": "dynamic-promo-mosaic",
+          "blocks": {
+            "promo-mosaic-block-1": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "promo-mosaic-block-2": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "promo-mosaic-block-3": {
+              "type": "promotion",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "promo-mosaic-block-1",
+            "promo-mosaic-block-2",
+            "promo-mosaic-block-3"
+          ],
+          "settings": {}
+        },
+        "home-blog-posts": {
+          "type": "dynamic-blog-posts",
+          "settings": {}
+        },
+        "home-twitter-feed": {
+          "type": "dynamic-twitter-feed",
+          "settings": {}
+        },
+        "home-featured-collection-1": {
+          "type": "dynamic-featured-collection",
+          "settings": {}
+        },
+        "home-promo-grid": {
+          "type": "dynamic-promo-grid",
+          "blocks": {
+            "promo-grid-block-1": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "promo-grid-block-2": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "promo-grid-block-3": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "promo-grid-block-4": {
+              "type": "promotion",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "promo-grid-block-1",
+            "promo-grid-block-2",
+            "promo-grid-block-3",
+            "promo-grid-block-4"
+          ],
+          "settings": {}
+        },
+        "home-featured-collection-2": {
+          "type": "dynamic-featured-collection",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "home-promo-mosaic",
+        "home-promo-grid",
+        "home-featured-collection-1",
+        "home-featured-collection-2",
+        "home-blog-posts",
+        "home-twitter-feed"
+      ]
+    },
+    "Graphic": {
+      "color_background": "#ffffff",
+      "color_headings": "#484848",
+      "color_text": "#4d4d4d",
+      "color_links": "#e32619",
+      "color_button_background": "#e32619",
+      "color_button_text": "#ffffff",
+      "color_header_background": "#ffffff",
+      "color_header_text": "#484848",
+      "color_footer_background": "#ffffff",
+      "color_footer_text": "#686868",
+      "font_body": "Google_Cabin_400,400i,700,700i",
+      "font_heading": "Google_Cabin_400,400i,700,700i",
+      "continue_shopping_url": "shopify:\/\/collections\/all",
+      "sections": {
+        "static-collection": {
+          "type": "static-collection",
+          "settings": {
+            "filter_style": "groups",
+            "filter_limit": "5"
+          }
+        },
+        "home-promo-mosaic": {
+          "type": "dynamic-promo-mosaic",
+          "blocks": {
+            "home-promo-mosaic-1": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-mosaic-2": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-mosaic-3": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-mosaic-4": {
+              "type": "promotion",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "home-promo-mosaic-1",
+            "home-promo-mosaic-2",
+            "home-promo-mosaic-3",
+            "home-promo-mosaic-4"
+          ],
+          "settings": {}
+        },
+        "home-promo-grid": {
+          "type": "dynamic-promo-grid",
+          "blocks": {
+            "home-promo-grid-1": {
+              "type": "promotion",
+              "settings": {
+                "promo_width": "full-width"
+              }
+            },
+            "home-promo-grid-2": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-grid-3": {
+              "type": "promotion",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "home-promo-grid-1",
+            "home-promo-grid-2",
+            "home-promo-grid-3"
+          ],
+          "settings": {}
+        },
+        "home-featured-collection-1": {
+          "type": "dynamic-featured-collection",
+          "settings": {}
+        },
+        "home-menu-list": {
+          "type": "dynamic-menu-list",
+          "blocks": {
+            "home-menu-list-1": {
+              "type": "menu",
+              "settings": {}
+            },
+            "home-menu-list-2": {
+              "type": "menu",
+              "settings": {}
+            },
+            "home-menu-list-3": {
+              "type": "menu",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "home-menu-list-1",
+            "home-menu-list-2",
+            "home-menu-list-3"
+          ],
+          "settings": {
+            "title": "Menu list"
+          }
+        },
+        "home-blog-posts": {
+          "type": "dynamic-blog-posts",
+          "settings": {}
+        },
+        "home-twitter-feed": {
+          "type": "dynamic-twitter-feed",
+          "settings": {}
+        },
+        "home-instagram-feed": {
+          "type": "dynamic-instagram-feed",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "home-promo-mosaic",
+        "home-promo-grid",
+        "home-featured-collection-1",
+        "home-menu-list",
+        "home-blog-posts",
+        "home-instagram-feed",
+        "home-twitter-feed"
+      ]
+    },
+    "Industrial": {
+      "color_background": "#ffffff",
+      "color_headings": "#4c4c4c",
+      "color_text": "#4c5154",
+      "color_links": "#0076de",
+      "color_button_background": "#0076de",
+      "color_button_text": "#ffffff",
+      "color_header_background": "#1d2236",
+      "color_header_text": "#ffffff",
+      "color_footer_background": "#edeff3",
+      "color_footer_text": "#5c5c5c",
+      "font_body": "Google_Libre+Franklin_400,400i,700,700i",
+      "font_heading": "Google_Arimo_400,400i,700,700i",
+      "continue_shopping_url": "shopify:\/\/collections\/all",
+      "sections": {
+        "static-header": {
+          "type": "static-header",
+          "settings": {}
+        },
+        "static-footer": {
+          "type": "static-footer",
+          "blocks": {
+            "static-footer-1": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "static-footer-3": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "static-footer-1",
+            "static-footer-3"
+          ],
+          "settings": {
+            "additional_menu": ""
+          }
+        },
+        "static-blog": {
+          "type": "static-blog",
+          "settings": {
+            "show_author": false
+          }
+        },
+        "static-product": {
+          "type": "static-product",
+          "settings": {
+            "layout": "layout--three-col"
+          }
+        },
+        "static-article": {
+          "type": "static-article",
+          "settings": {
+            "show_author": false
+          }
+        },
+        "static-collection": {
+          "type": "static-collection",
+          "settings": {
+            "filter_style": "groups"
+          }
+        },
+        "home-promo-mosaic": {
+          "type": "dynamic-promo-mosaic",
+          "blocks": {
+            "home-promo-mosaic-1": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-mosaic-2": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-mosaic-3": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-mosaic-4": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-mosaic-5": {
+              "type": "promotion",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "home-promo-mosaic-1",
+            "home-promo-mosaic-2",
+            "home-promo-mosaic-3",
+            "home-promo-mosaic-4",
+            "home-promo-mosaic-5"
+          ],
+          "settings": {
+            "section_height": "medium"
+          }
+        },
+        "home-featured-collection": {
+          "type": "dynamic-featured-collection",
+          "settings": {}
+        },
+        "home-promo-grid": {
+          "type": "dynamic-promo-grid",
+          "blocks": {
+            "home-promo-grid-1": {
+              "type": "promotion",
+              "settings": {}
+            },
+            "home-promo-grid-2": {
+              "type": "promotion",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "home-promo-grid-1",
+            "home-promo-grid-2"
+          ],
+          "settings": {}
+        },
+        "home-blog-posts": {
+          "type": "dynamic-blog-posts",
+          "settings": {}
+        },
+        "home-collection-list": {
+          "type": "dynamic-collection-list",
+          "blocks": {
+            "home-collection-list-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "home-collection-list-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "home-collection-list-3": {
+              "type": "collection",
+              "settings": {}
+            },
+            "home-collection-list-4": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "home-collection-list-1",
+            "home-collection-list-2",
+            "home-collection-list-3",
+            "home-collection-list-4"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "home-promo-mosaic",
+        "home-featured-collection",
+        "home-promo-grid",
+        "home-collection-list",
+        "home-blog-posts"
+      ]
+    }
+  }
+}

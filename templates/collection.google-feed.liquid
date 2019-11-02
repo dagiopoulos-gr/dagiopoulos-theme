@@ -1,0 +1,26 @@
+{% layout none %}<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+  <channel>
+    <title>{{shop.name | escape }}</title>
+    <link>{{shop.url}}</link>
+    {% paginate collections.all.products by 250 %}{% for product in collections.all.products %}{% for variant in product.variants %}{% if variant.price != 0  %}
+    <item>
+      <g:id>{{ variant.id }}</g:id>
+      <g:title><![CDATA[{{ product.title }} {% unless variant.title == 'Default Title'  %}{{ variant.title }}{% endunless %}]]></g:title>
+      <g:description><![CDATA[{{ product.description | strip_html | strip_newlines }}']]></g:description>
+      <g:link><![CDATA[{{ shop.url }}{{ variant.url }}]]></g:link>
+      <g:image_link><![CDATA[{% if variant.image.src  %}{{ variant.image.src | product_img_url: 'large' | prepend: 'https:' }}{% else %}{{ product.featured_image | product_img_url: 'large' | prepend: 'https:' }}{% endif %}]]></g:image_link>
+      <g:availability>{% if variant.available %}in stock{% else %}out of stock{% endif %}</g:availability>
+      <g:price>{{ variant.price | money_without_currency }} EUR</g:price>
+      <g:condition>new</g:condition>
+      <g:shipping>
+        <g:country>GR</g:country>
+        <g:service>Standard</g:service>
+        <g:price>3.00 EUR</g:price>
+      </g:shipping>
+      <g:gtin>{{ variant.barcode }}</g:gtin>
+      <g:brand>{{ product.vendor }}</g:brand>
+    </item>
+    {% endif %}{% endfor %}{% endfor %}{% endpaginate %}
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+{% assign cat = collection.handle | split: '-' | first %}
+{% unless collection.handle == cat %}
+{% capture breadcrumbs_cat %}
+<span class="breadcrumbs-delimiter" aria-hidden="true">
+  {% include 'icon-chevron-down-thin' %}
+</span>
+
+{% capture url %}/collections/{{ cat }}{% endcapture %}
+<a href="{{ url }}">
+  {{ cat
+    | replace: 'chromata_vernikia_episkevastika_kolles', 'Χρώματα Βερνίκια Επισκευαστικά & Κόλλες'
+    | replace: 'chromata_metallou_xylou', 'Χρώματα Μετάλλου & Ξύλου'
+    | replace: 'Monosi', 'Μόνωση'
+    | replace: 'Vernikia', 'Βερνίκια'
+    | replace: 'Diakosmisi', 'Διακόσμηση'
+    | replace: 'Zografiki_hobby', 'Ζωγραφική & Hobby'
+    | replace: 'Chroma_verniki', 'Χρώμα & Βερνίκι'
+    | replace: 'ergaleia_voithitika_vafon', 'εργαλεία & βοηθητικά βαφών'
+    | replace: 'Ergaleia', 'Εργαλεία'
+    | replace: 'Prostasia_simansi', 'Προστασία & Σήμανση'
+    | replace: 'Asfaleia', 'Ασφάλεια'
+    | replace: 'Diy', 'DIY'    
+  }}
+</a>
+{% endcapture %}
+{% endunless %}
+
+{% if template contains 'product' %}
+  {% if collection.url %}
+    {{ breadcrumbs_cat }}
+  {% endif %}
+{% elsif template contains 'collection' and collection.handle %}
+  {{ breadcrumbs_cat }}
+{% endif %}

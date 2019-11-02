@@ -1,0 +1,35 @@
+{% assign menu = linklists.main-menu %}
+{%- capture delimiter -%}
+    <span class="breadcrumbs-delimiter" aria-hidden="true">
+        {% include 'icon-chevron-down-thin' %}
+    </span>
+{%- endcapture -%}
+<nav
+    class="breadcrumbs-container"
+    aria-label="{{ 'general.accessibility.nav_breadcrumbs' | t }}"
+>
+    <a href="/">{{ 'general.breadcrumbs.home' | t }}</a>
+    {{ delimiter }}
+    {% for link in menu.links %}
+        {% if link.active or link.child_active %}
+            <a href={{link.url}}>{{ link.title }}</a>
+        {% endif %}
+        {% for sub_link in link.links %}
+            {% if sub_link.active %}>
+                {{ delimiter }}
+                <span>{{ sub_link.title }}</span>
+            {% elsif sub_link.child_active %}
+                {{ delimiter }}
+                <a href={{sub_link.url}}>{{ sub_link.title }}</a>
+        {% endif %}
+        {% for sub_sub_link in sub_link.links %}
+            {% if sub_sub_link.active %}
+                {{ delimiter }}
+                <span>
+                    {{ sub_sub_link.title }}
+                </span>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+</nav>
